@@ -1,0 +1,73 @@
+Sets:
+    A Set is defined as collection of distinct and well defined objects, so repititions not allowed.
+    Set of all your friends.
+    Set of all bikes in India.
+    Set of all citizens of India.
+
+    Set of Natural Numbers, N = {0,1,2,3,4,....}
+    Set of all integers, Z = {0, +- 1, +- 2, ...}
+
+    Def: Cardinality of a Set is defined as the number of elements in a set.
+    Symbol: E denots belongs to
+
+    Proof that N is infinite:
+        Assume N is finite. There should be a largest number in N. Let's name that "m".
+        Given x in N, x + 1 is also in N. 0 the smallest non-negative number is in N.
+        m + 1 is also in N.
+        N is infinite. Proof by contradict.
+
+    Finite Set examples:
+        A = {1,2,3}, B = {a,b,c}
+        E: A == B, true or false. Ans: false
+        Isomorphism <==> Similarity analysis.
+
+    Subset definition:
+        Given sets A and B, A is said to be a subset of B if every element in A is also in B.
+        We use "<=" as a subset symbol in vs code. Ex, A <= B.
+
+        S: P = {1,2,3} => P <= P
+        S is true or false.
+
+    Page 4, point 3.
+    P1: {{}} is not a subset of {{{}}}
+    Let A = {{}}
+    P2: A is not a subset of {A}
+    P1 and P2 are same, we have just substituted the symbol.
+    If P2 is true then P1 is true, if P2 false then P1 false.
+    {} and {{{}}} are the subsets of {{{}}}
+    {} and {A} are the subsets of {A}
+    
+    Definition Examples:
+
+    If A = {1,2} means 1 E A and 2 E A.
+
+    Definition of Rational numbers:
+    Let p,q E Z and q /= 0, then (p/q) E R.
+
+    Define Set union:
+    Symbolic notation, If A and B are sets A U B is also a set.
+    What is A \/ B?
+    If x E A \/ B => x E A or x E B.
+
+    Define Set intersection:
+    A /\ B,
+    If x E A /\ B then x E A and x E B.
+    
+    Constructing A \/ B:
+    A = {1,2,3} B = {3,4,5}
+    |A| == 3 == |B| 
+    A \/ B = {1,2,3,4,5}
+
+    Definition of Cardinality symbol:
+        |A| is a symbol denote the number of elements in A
+
+        |A \/ B| >= max(|A|, |B|)
+        |A \/ B| <= |A| + |B|
+        |A /\ B| <= min(|A|, |B|)
+
+        max(|A|, |B|) <= |A \/ B| <= |A| + |B|
+
+
+    
+        
+
