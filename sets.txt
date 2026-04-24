@@ -13,8 +13,10 @@ Sets:
     Proof that N is infinite:
         Assume N is finite. There should be a largest number in N. Let's name that "m".
         Given x in N, x + 1 is also in N. 0 the smallest non-negative number is in N.
-        m + 1 is also in N.
-        N is infinite. Proof by contradict.
+        m + 1 is also in N. This implies m is not the largest number. This is a contradiction.
+        Hence N is infinite. This is called "Proof by contradiction".
+
+        Further reading: Paeno axioms.
 
     Finite Set examples:
         A = {1,2,3}, B = {a,b,c}
@@ -68,6 +70,53 @@ Sets:
         max(|A|, |B|) <= |A \/ B| <= |A| + |B|
 
 
+    N = {0,1,2,3,4,...}
+    O = {1,3,5,7,...}
+    E = {0,2,4,6,8,...}
+    |N| == |O|, |N| > |O| or |N| < |O|
+    O < N
+
+    f : N -> O,
+    f(n) = 2 * n + 1, is a 1-1 correspondence. HW: Prove it.
+    g: O -> N, every n E O is an odd number. 
+    g(n) = (n-1) / 2, is also a 1-1 correspondence. HW: Prove it.
+
+    Because of functions f and g, we can deduce |N| = |O|.
+
+    HW: Using the above method find f and g, to prove |N| = |E|.
+
+
+    a, b /E Z, a divides b, if b = a * k for some k /E Z
+
+    2 divides 4, because 4 = 2 * 2
+    2 divides 104, because 104 = 2 * 52
+    2 divides 0, because 0 = 2 * 0
+
+    One to One correspondence:
+    A = {1,2}, B = {4}
+    Only if |A| <= |B| we can have one-one correspondence from A to B.
+
+    Corollary 1-1.1: If there is a 1-1 correspondence from A to B, then we can deduce that |A| <= |B|
+    Corollary 1-1.2: If there is a 1-1 from A to B and a 1-1 from B to A, then |A| = |B|
+
+    Exercise: Using 1-1.1 prove 1-1.2
+    In 1-1.2, we are supposing that there exists a 1-1 from A to B, using 1-1.1, we can deduce that |A| <= |B|
+    In 1-1.2, we are also supposing that there exists a 1-1 from B to A, using 1-1.1, we can deduce that |B| <= |A|
+
+    We have this two simultaneous results, |A| <= |B| and |B| <= |A|, you can deduce only if |A| = |B|
     
+    Example of B != C, but A /\ B == A /\ C.
+    A = {1,2,3}, B = {4}, C = {5}
+    A /\ B = {} = A /\ C
+    But in the question, they have given a condition, which is A, B, C <= U
+    U = {1,2,3,4,5,..}
+    !A = {4,5,...}
+    !A /\ B = {4}
+    !A /\ C = {5}
+
+    U is called the universal set in a particular context.
+    U = A \/ !A
+    !A = U - A, is the definition of A complement.
+    Since B <= U, B = U /\ B = (A \/ !A) /\ B = (A /\ B) \/ (!A /\ B)
         
 
